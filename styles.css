@@ -190,11 +190,11 @@ footer {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease;
   border: 1px solid #ccc;
   border-top: none;
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  background-color:#ddd;
 }
