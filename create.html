@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>CodersMod</title>
+    <title>CodersMod - Create Project</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -25,26 +25,21 @@
     </header>
 
     <main>
-      <p>Welcome to CodersMod!</p>
+      <p>Create a new project</p>
 
-      <div class="projects container grid">
-        <div class="grid-title">
-          Projects
-        </div>
-        <div class="grid-content">
-          <div class="project">
-            <h3>Project 1</h3>
-            <p>Description</p>
-          </div>
-          <div class="project">
-            <h3>Project 2</h3>
-            <p>Description</p>
-          </div>
-          <div class="project">
-            <h3>Project 3</h3>
-            <p>Description</p>
-          </div>
-        </div>
+      <div class="container">
+        <form onsubmit="event.preventDefault(); window.location.href = document.getElementById('project-type').value;">
+          <select name="project-type" id="project-type">
+            <option value="https://scratch.mit.edu/projects/editor/">Scratch</option>
+            <option value="https://turbowarp.org/editor">TurboWarp</option>
+            <option value="https://studio.penguinmod.com/editor.html">PenguinMod</option>
+            <option value="https://snail-ide.js.org/editor.html">Snail IDE</option>
+            <option value="https://librekitten.org/editor.html">LibreKitten</option>
+            <option value="https://sheeptester.github.io/scratch-gui/index.html">E羊icques</option>
+            <option value="https://www.adacraft.org/studio/">Adacraft</option>
+          </select>
+          <button type="submit">Create</button>
+        </form>
       </div>
     </main>
 
